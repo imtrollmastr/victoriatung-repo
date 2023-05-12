@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>USER LOGIN | imtrollmastr</title>
+<link rel="icon" href="images/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://imtrollmastr.vercel.app/style.css">
+<script>
+  function checkPassword() {
+    var password = document.getElementById("passwordBox");
+    var passwordText = password.value;
+    if(passwordText == "userACCESS123") {
+      return true;
+    }
+    alert("ErrorData: accessdenied; returnedVoid")
+    return false
+  }
+</script>
+   </head>
+   <body>
+    <h3>Welcome to the Authorization Page for imtrollmastr</h3>
+    <p>Please state your username, password.</p>
+    <p>NOTICE: The password is currently hidden unless you are given the password.</p>
+    <p>Sorry for any inconvenience.</p>
+    <form method="contact">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+    <p>Password:<input id="passwordBox" type="password"/></p>
+      <a href="index.html" onclick="return checkPassword();">Authorize</a>
+      <button onclick="window.location.href='https://github.com/login/oauth/authorize?client_id=e96a750f0e30abb4da49&redirect_uri=https://imtrollmastr.vercel.app/&scope=user:username/'">LOGIN WITH GITHUB</button>
+      <button onclick="window.location.href='https://api.twitter.com/oauth/authenticate?oauth_token=AAAAAAAAAAAAAAAAAAAAAHGOnQEAAAAAVJbUJSrlhnOfz2jKwyKGfS%2FWuog%3DjyJj7cFkOeEhOMBbl7hpKVvP5ekueWrH9PKOTMI2kGHOEh28ku'">LOGIN WITH TWITTER</button>
+    </body>
+</html>
